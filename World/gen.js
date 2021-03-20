@@ -68,8 +68,7 @@ if(!_05) {
 	_05 = true
 }
 
-console.log(_03)
-fs.writeFileSync("../WorldChunks/chunk_overworld_" + _06, new Buffer(_03, 'hex'))
+fs.writeFileSync("../WorldChunks/chunk_overworld_" + _06, new Buffer.from(_03, 'hex'))
 
 //save info file
 _06++
